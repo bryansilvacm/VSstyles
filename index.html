@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exemplo Responsivo</title>
+
+<style>
+html, body{
+	height:100%;
+	margin:0;
+}
+body{
+	font-family:Arial, sans-serif;
+	margin:0;
+	padding:0;
+	display:flex;
+	flex-direction:column;
+	
+}
+#header{
+	background-color:#333;
+	color:white;
+	width:100%;
+	text-align:center;
+	padding:2rem 6%;
+	height:60px;
+	display:flex;
+	flex-direction:row;
+	align-items:center;
+	position:fixed;
+	
+		
+
+}
+#logo{
+	width:100px;
+	height:100px;
+
+	
+}
+span{
+	font-family:sans-serif;
+	font-size:2.8rem;	
+	font-weight:bold;
+	text-transform:uppercase;
+	
+}
+nav{
+	display:flex;
+	flex-direction:row;
+	background-color:#54B646;
+	margin-left:auto;
+	margin-right:auto;
+	width:100%;	
+	max-width:30rem;
+	text-align:center;
+	border-radius:0.5rem;	
+	box-shadow:2px 2px 3px black;
+}
+ul{
+	display:flex;
+	flex-direction:row;
+	gap:2rem;
+	
+}
+li{
+	
+	list-style:none;
+	font-wigth:bold;
+}
+a{
+	text-decoration:none;
+	color:#F4F4F4;
+}
+
+.main-content{
+	display:flex;
+	flex-wrap:wrap;
+	gap:20px;
+	margin:28px 0;
+	
+}
+.main-content .box{
+	flex:1 1 1px;
+	background-color:#f4f4f4;
+	padding:20px;
+	border:1px solid #ddd;
+	text-align:center;
+}
+
+.area_conteudo{
+	width:80%;
+	margin:auto;
+	padding:auto;
+	justify-content:center;
+}
+
+.container{
+	width:100%;
+	margin:auto;
+	max-width:1200px;
+	flex:1;		
+}
+#banner{
+	width:100%;
+	border-radius:0;
+	margin:auto;
+}
+
+h2{
+	color:#333;
+}
+h3{
+background-color:#333;
+color:white;
+width:10rem;
+height:3rem;
+display:flex;
+justify-content:center;
+align-items:center;
+margin:3px auto;
+
+}
+h3:hover{
+	background-color:#334;
+	
+}
+.box:hover{
+	background-color:white;	
+}
+#subclasse{
+	display:none;
+}
+a{
+	text-decoration:none;
+}
+.titulo_em_alta{
+	margin:auto;
+background:red;
+	width:10%;
+	text-align:center;
+	color:;
+}
+.em_alta{
+	display:flex;
+	width:100%;
+	max-width:1200px;
+	margin:auto;
+	flex:1 ;
+	gap:1rem;
+}
+.produto{
+	width:24%;
+	border: 3px solid #F4F4F4;
+	transition:0.5s;
+	margin:2px;
+	border-radius:1rem;
+}
+.produto:hover{
+	border:3px solid #54B646;
+}
+img{
+	max-width:100%;
+	border-radius:1rem;
+	height:auto;
+}
+p, h4{
+	padding-left:10px;
+}
+footer{
+	background-color:#333;
+	color:white;
+	width:100%;
+	height:50px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+#sobrenos{
+	width:90%;
+	max-width:1230px;
+	margin:auto;
+}
+#sobrenos h2, H3{
+	margin:auto;
+	padding:2rem 0 0 0;
+	text-align:center;
+	background-color:white;
+	color:#54B646;
+}
+#sobrenos h3{
+	color:#333;
+}
+	@media (max-width:600px){
+.main-content{	
+
+flex-direction:column;
+
+
+}
+}
+</style>
+
+</head>
+
+<body>
+	<header id="header">
+	<img id="logo" src="C:\Users\Caixa\Downloads\here\test css responsivo\ViEW STYLES.png">
+	<span>viewstyles</span>
+	
+	<nav class="navegar">
+	<ul>
+	<li><a href="#banner">Home</a></li>
+	<li><a href="#sobrenos">Sobre nós</a></li>
+	<li><a href="#faleconosco">Fale conosco</a></li>
+	<li><a href="#">Cadastre-se</a></li>
+	</ul>
+	</nav>
+
+	
+
+</header>
+
+<div class="area_conteudo">
+<img id="banner" src="C:\Users\Caixa\Downloads\here\test css responsivo\banner.png">
+<div class="container">
+<div class="main-content">
+<div class="box"><h2>Feminino</h2></div>
+<div class="box"><h2>Masculino</h2></div>
+<div class="box" onclick="clicar()">
+<h2>Infantil</h2>
+<div id="subclasse">
+<a href="#"><h3>Menino</h3></a>
+<a href="#"><h3>Menina</h3></a>
+</div>
+</div>
+
+</div>
+
+<h2 class="titulo_em_alta">EM ALTA</h2>
+<section class="em_alta">
+<div class="produto">
+	<img src="https://imgmarketplace.lojasrenner.com.br/20001/1169/7010703961653/7510708040943/0.jpeg" alt="tenis casual mizuno feminino street wind" >
+	<h4>Tênis Casual Feminino Mizuno Street Wind</h4>
+	<p><strong>R$ 349,99</strong></p>
+	<p>7X de R$50,00</p>
+</div>
+
+<div class="produto">
+	<img src="https://imgmarketplace.lojasrenner.com.br/20001/2264/701519526/754694518/0.jpeg" alt="tTênis Fila Intruder Feminino - Preto-Laranja Preto" >
+	<h4>Tênis Fila Intruder Feminino - Preto-Laranja Preto</h4>
+	<p><strong>R$ 299,99</strong></p>
+	<p>7X de R$42,86</p>
+</div>
+
+<div class="produto">
+	<img src="https://imgmarketplace.lojasrenner.com.br/20001/2264/701519579/754694594/0.jpeg" alt="Tênis Mizuno Laser - Masculino - Azul+Marinho Azul" >
+	<h4>Tênis Mizuno Laser - Masculino - Azul+Marinho Azul</h4>
+	<p><strong>R$ 569,90</strong></p>
+	<p>7X de R$81,41</p>
+	
+</div>
+<div class="produto">
+	<img src="https://imgmarketplace.lojasrenner.com.br/20001/4010/7010702513213/7510705753596/0.jpg" alt="Tênis Fila Kr6 Infantil Vermelho" >
+	<h4>Tênis Fila Kr6 Infantil Vermelho</h4>
+	<p><strong>R$ 899,97</strong></p>
+	<p>7X de R$128,57</p>
+</div>
+</section>
+<section class="em_alta">
+<div class="produto">
+	<img src="https://lojasdufins.com.br/cdn/shop/products/teniscampanha_500x.png?v=1692705363" alt="Tênis Respirável e Confortável" >
+	<h4>Tênis Respirável e Confortável - Fast Pro Ultra + BRINDE GRÁTIS</h4>
+	<p><strong>R$ 189,90</strong></p>
+	<p>12X de R$19,07</p>
+</div>
+
+<div class="produto">
+	<img src="https://static.netshoes.com.br/produtos/tenis-sapatenis-masculino-polo-joy-casual-em-lona/75/FSO-0021-375/FSO-0021-375_zoom1.jpg?ts=1666280865?ims=1088x" alt="Tênis Sapatênis Masculino Polo Joy Casual Em Lona - Cinza Claro" >
+	<h4>Tênis Sapatênis Masculino Polo Joy Casual Em Lona - Cinza Claro</h4>
+	<p><strong>R$ 94,90</strong></p>
+	<p>5X de R$19,98</p>
+</div>
+
+<div class="produto">
+	<img src="https://http2.mlstatic.com/D_NQ_NP_2X_964829-MLB49666359083_042022-F.webp alt="Kit 2 Pares Tenis Infantil Feminino Escolar Atacado" >
+	<h4>Kit 2 Pares Tenis Infantil Feminino Escolar Atacado</h4>
+	<p><strong>R$ 129,90</strong></p>
+	<p>6X de R$21,65</p>
+</div>
+<div class="produto">
+	<img src="https://static.netshoes.com.br/produtos/tenis-infantil-adidas-runfalcon-3-sport-running-lace/94/FB8-4330-794/FB8-4330-794_zoom1.jpg?ts=1700144314?ims=1088x" alt="Tênis Infantil Adidas RunFalcon 3 Sport Running Lace - Rosa+Preto" >
+	<h4>Tênis Infantil Adidas RunFalcon 3 Sport Running Lace - Rosa+Preto</h4>
+	<p><strong>R$ 219,99</strong></p>
+	<p>11X de R$20,00</p>
+</div>
+
+</section>
+</div>
+</div>
+<section id="sobrenos">
+	<h2>VS STYLES</h2>
+	<h3>Quem somos?</h3>
+	<p>Somo a VS Style, uma loja de calçados que acredita nos 3 princípios para o calçado ideal, qualidade, conforto e estilo, na VS Style garantimos os 3. <br> Fundada em fevereiro de 2001, em Bauru-SP, há 23 anos prezamos pelo bom relacionamento com o cliente, buscamos atendê-lo da melhor forma e proporciar a todos não só uma compra, mas uma experiência.</p>
+</section>
+<footer id="faleconosco">
+<p>&copy;vsstyles 2024</p>
+</footer>
+
+<script>
+let subclasse = document.getElementById("subclasse");
+function clicar(){
+	if(subclasse.style.display==="none"){
+	subclasse.style.display = "block";
+    } else{
+	subclasse.style.display = "none";
+}
+}
+</script>
+
+</body>
+</html>
