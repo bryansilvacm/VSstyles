@@ -1,0 +1,260 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+#header {
+  background-color: #333;
+  color: white;
+  width: 100%;
+  text-align: center;
+  padding: 2rem 6%;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: fixed;
+}
+#logo {
+  width: 100px;
+  height: 100px;
+}
+span {
+  font-family: sans-serif;
+  font-size: 2.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  background-color: #54b646;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 30rem;
+  text-align: center;
+  border-radius: 0.5rem;
+  box-shadow: 2px 2px 3px black;
+}
+ul {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+li {
+  list-style: none;
+  font-weight: bold;
+}
+a {
+  text-decoration: none;
+  color: #f4f4f4;
+}
+
+.main-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 28px 0;
+}
+.main-content .box {
+  flex: 1 1 1px;
+  background-color: #f4f4f4;
+  padding: 20px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.area_conteudo {
+  width: 80%;
+  margin: auto;
+  padding: auto;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  margin: auto;
+  max-width: 1200px;
+  flex: 1;
+}
+#banner {
+  width: 100%;
+  border-radius: 0;
+  margin: auto;
+}
+
+h2 {
+  color: #333;
+}
+h3 {
+  background-color: #333;
+  color: white;
+  width: 10rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3px auto;
+}
+h3:hover {
+  background-color: #334;
+}
+.box:hover {
+  background-color: white;
+}
+#subclasse {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  display: flex;
+}
+.titulo_em_alta {
+  margin: auto;
+  background: red;
+  width: 10%;
+  text-align: center;
+}
+#em_alta {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  flex: 1;
+  gap: 1rem;
+}
+.produto {
+  width: 24%;
+  border: 3px solid #f4f4f4;
+  transition: 0.5s;
+  margin: 2px;
+  border-radius: 1rem;
+}
+.produto:hover {
+  border: 3px solid #54b646;
+}
+img {
+  max-width: 100%;
+  border-radius: 1rem;
+  height: auto;
+}
+p,
+h4 {
+  padding-left: 10px;
+}
+footer {
+  background-color: #333;
+  color: white;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#sobrenos {
+  width: 90%;
+  max-width: 1230px;
+  margin: auto;
+}
+#sobrenos h2,
+H3 {
+  margin: auto;
+  padding: 2rem 0 0 0;
+  text-align: center;
+  background-color: white;
+  color: #54b646;
+}
+#sobrenos h3 {
+  color: #333;
+}
+@media (max-width: 600px) {
+  #header {
+    height: 10px;
+  }
+
+  #logo {
+    width: 60px;
+    height: 60px;
+  }
+
+  span {
+    font-size: 1.8rem;
+  }
+
+  nav {
+    width: 40%;
+  }
+  ul {
+    gap: 0;
+  }
+  li {
+    font-size: 0.8rem;
+  }
+
+  #banner {
+    margin-top: 4rem;
+  }
+
+  .main-content {
+    flex-direction: column;
+    width: 50%;
+    margin: 1rem auto;
+  }
+  .main-content .box {
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .titulo_em_alta {
+    width: 40%;
+    font-size: 1.5rem;
+    margin: 1rem auto;
+  }
+
+  #em_alta {
+    width: 80%;
+    flex-wrap: wrap;
+    margin: auto;
+  }
+
+  .produto {
+    width: 40%;
+    margin: auto;
+  }
+}
+@media (max-width:800px){
+
+
+
+}
+
+
+@media (max-width: 460px) {
+  .area_conteudo {
+    width: 100%;
+    background-color: #54b646;
+  }
+  span {
+    font-size: 1.4rem;
+  }
+  #logo {
+    width: 40px;
+    height: 40px;
+  }
+  #banner {
+    width: 100%;
+  }
+  a {
+    font-size: 1rem;
+  }
+}
